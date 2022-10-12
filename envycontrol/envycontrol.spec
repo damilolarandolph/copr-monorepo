@@ -14,7 +14,7 @@ Version: 2.1.1
 # Increase when you change the package without changing the
 # version. Always append %%{?dist}, this takes care of adding
 # the e.g. .f32 to the package
-Release: 4%{?dist}
+Release: 5%{?dist}
 # Multiple licenses can be combined with logical operators, e.g.
 # GPLv3 and MIT and LGPL
 # If different parts of the code use different licenses, you should
@@ -105,6 +105,9 @@ EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvi
 # version. Lines beginning with - after that list the changes contained in the
 # package.
 %changelog
+* Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.1-5
+- Update (damilolarandolph@gmail.com)
+
 * Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.1-4
 - 
 
