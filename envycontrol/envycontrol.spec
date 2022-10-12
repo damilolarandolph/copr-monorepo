@@ -4,14 +4,12 @@
 # the specfile helps readability
 # You can use the %%global macro to define your own variables
 # can be paired with %%if structures to set up switches
-%global srcname copr-tito-quickdoc
-%global pkgver 2.1.1
 #-- PREAMBLE ------------------------------------------------------------------#
 # This will be the name of the package created. Needs to match
 # the name of the specfile
 Name: envycontrol
 # Version as given by upstream
-Version: %{pkgver}
+Version: 2.1.2
 # Iteration of the the package of this particular version
 # Increase when you change the package without changing the
 # version. Always append %%{?dist}, this takes care of adding
@@ -33,7 +31,7 @@ Url: https://github.com/geminis3/envycontrol
 # git clone https://pagure.io/copr-tito-quickdoc
 # cd copr-tito-quickdoc
 # tito build --tgz
-Source0: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{pkgver}.tar.gz
+Source: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{version}.tar.gz
 # You can add multiple source files by adding this more than once,
 # appending a new number, i.e. SourceN. These values are available
 # later in the %%{SOURCE0}, %%{SOURCE1}, ... macros.
@@ -106,6 +104,9 @@ EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvi
 # version. Lines beginning with - after that list the changes contained in the
 # package.
 %changelog
+* Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.2-1
+- 
+
 * Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.1-1
 - new package built with tito
 
