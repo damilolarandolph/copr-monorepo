@@ -44,6 +44,7 @@ Source0: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{version}.t
 BuildArch: noarch
 # List of packages required for building this package
 BuildRequires: python3-setuptools
+BuildRequires: wget
 
 # List of packages required by the package at runtime
 Requires: python3
