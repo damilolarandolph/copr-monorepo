@@ -14,7 +14,7 @@ Version: 2.1.1
 # Increase when you change the package without changing the
 # version. Always append %%{?dist}, this takes care of adding
 # the e.g. .f32 to the package
-Release: 3%{?dist}
+Release: 4%{?dist}
 # Multiple licenses can be combined with logical operators, e.g.
 # GPLv3 and MIT and LGPL
 # If different parts of the code use different licenses, you should
@@ -31,7 +31,7 @@ Url: https://github.com/geminis3/envycontrol
 # git clone https://pagure.io/copr-tito-quickdoc
 # cd copr-tito-quickdoc
 # tito build --tgz
-Source: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{version}.tar.gz
+Source0: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{version}.tar.gz
 # You can add multiple source files by adding this more than once,
 # appending a new number, i.e. SourceN. These values are available
 # later in the %%{SOURCE0}, %%{SOURCE1}, ... macros.
@@ -43,10 +43,10 @@ Source: https://github.com/geminis3/envycontrol/archive/refs/tags/v%{version}.ta
 # arch-less packages as such
 BuildArch: noarch
 # List of packages required for building this package
-BuildRequires: python34-setuptools
+BuildRequires: python3-setuptools
 
 # List of packages required by the package at runtime
-Requires: python34
+Requires: python3
 Requires: xrandr
 # Here, the RPM python macros automatically take care of the dependencies,
 # so none are listed
@@ -104,6 +104,9 @@ EnvyControl is a program aimed to provide an easy way to switch GPU modes on Nvi
 # version. Lines beginning with - after that list the changes contained in the
 # package.
 %changelog
+* Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.1-4
+- 
+
 * Wed Oct 12 2022 Damilola Randolph <damilolarandolph@gmail.com> 2.1.1-3
 - 
 
